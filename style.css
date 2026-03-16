@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #eef2ff, #f8fafc);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+    color: #1d4ed8;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 20px;
+    color: #111827;
+}
+
+.budget-section,
+.summary-section,
+.history-section,
+.expense-section,
+.list-section {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 8px 0 14px 0;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #f9fafb;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+}
+
+.summary-section p {
+    margin: 12px 0;
+    padding: 14px 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    font-size: 17px;
+    border: 1px solid #e5e7eb;
+}
+
+.summary-section span {
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #eff6ff, #f8fafc);
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    box-shadow: 0 6px 16px rgba(30, 64, 175, 0.06);
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+.auth-section {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+#authStatus {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+li button {
+    width: auto;
+    padding: 8px 14px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border-radius: 10px;
+}
+
+li button:hover {
+    box-shadow: 0 8px 18px rgba(220, 38, 38, 0.25);
+}
+#historyResult {
+    margin-top: 14px;
+}
+
+.history-item {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-top: 10px;
+}
+
+.history-item strong {
+    color: #111827;
+}
+li button:first-of-type {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    margin-right: 10px;
+}
+
+li button:first-of-type:hover {
+    box-shadow: 0 8px 18px rgba(217, 119, 6, 0.25);
+}S
+ #cancelEditBtn {
+     margin-top: 10px;
+     background: linear-gradient(135deg, #6b7280, #4b5563);
+ }
+
+#cancelEditBtn:hover {
+    box-shadow: 0 8px 18px rgba(75, 85, 99, 0.25);
+}
+.auth-gate {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e5e7eb;
+}
+
+#authMessage {
+    margin-top: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#sessionStatus {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.auth-gate button,
+.auth-section button,
+.expense-section button {
+    width: auto;
+    min-width: 160px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#loginBtn,
+#signupBtn,
+#guestBtn,
+#logoutBtn,
+#addExpenseBtn,
+#cancelEditBtn {
+    display: inline-block;
+}
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
